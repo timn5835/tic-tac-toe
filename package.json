@@ -4,7 +4,9 @@
   "description": "react tic tact toe",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "postinstall": "webpack -p"
   },
   "keywords": [
     "react"
@@ -12,6 +14,7 @@
   "author": "Tim Nguyen",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.14.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "webpack-dev-server": "^1.16.2"
